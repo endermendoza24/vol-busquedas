@@ -17,6 +17,6 @@ class SearchController extends Controller
         // Aquí puedes realizar cualquier lógica de búsqueda con la palabra clave ingresada
         // Por ejemplo, podrías redirigir a una página de resultados con los datos buscados
         // return redirect('/resultados')->with('keyword', $keyword);
-        return "Resultados para la palabra clave: " . $keyword;
+         return view('partials.search-results', ['keyword' => $keyword]);
     }
 }
